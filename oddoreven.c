@@ -1,15 +1,22 @@
-# include<stdio.h>
+#include <stdio.h>
+int evenOdd(int x)
+{
+   if (x%2==0)
+   {
+    printf("The number is even\n");
+
+   }
+   else 
+   {
+    printf("The number is odd\n");
+   }
+}
+
 int main()
 {
-    int i;
-    printf("enter an integer:\n");
-    scanf("%d",&i);
-    if(i%2==0)
-    {
-        printf("the entered integer is even\n");
-    }
-    else
-    {
-        printf("the entered integer is odd\n");
-    }
-}   
+    int number;
+    printf("Enter a  number:\n");
+    scanf("%d",&number);
+
+    evenOdd(number);
+}
